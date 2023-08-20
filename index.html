@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1062492192091930705/1137810673162780682/SupersStudio.png?width=423&height=423">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Super's Studio - Content Creator Application</title>
+    <style>
+          body {
+            background-image: url('https://media.discordapp.net/attachments/1062492192091930705/1137810673162780682/SupersStudio.png?width=423&height=423');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #main {
+            width: 600px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+        </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Super's Studio - Content Creator Application</h1>
+        <p>Thank you for your interest in becoming a content creator at Super's Studio! Please provide us with the following information:</p>
+        <form id="application-form">
+            <label for="discord-username">Discord Username:</label>
+            <input type="text" id="discord-username" name="discord-username" required><br>
+  
+            <label for="preferred-platform">Preferred Platform(s) for Content Creation:</label>
+            <input type="text" id="preferred-platform" name="preferred-platform" required><br>
+  
+            <label for="content-niche">What is your content niche or focus?</label>
+            <input type="text" id="content-niche" name="content-niche" required><br>
+  
+            <label for="experience">Do you have prior experience as a content creator?</label>
+            <select id="experience" name="experience" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Yes" style="color: rgb(0, 0, 0);">Yes</option>
+                <option value="No" style="color: rgb(0, 0, 0);">No</option>
+            </select><br>
+  
+            <label for="motivation">What motivates you to become a content creator at Super's Studio?</label>
+            <textarea id="motivation" name="motivation" rows="4" required></textarea><br>
+  
+            <label for="content-plan">Briefly outline your content creation plan:</label>
+            <textarea id="content-plan" name="content-plan" rows="4" required></textarea><br>
+  
+            <label for="collaboration">Are you open to collaboration with other content creators?</label>
+            <select id="collaboration" name="collaboration" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Yes" style="color: rgb(0, 0, 0);">Yes</option>
+                <option value="No" style="color: rgb(0, 0, 0);">No</option>
+            </select><br>
+  
+            <label for="activity-level">How active will you be as a content creator? (Use a 1-10 scale)</label>
+            <input type="number" id="activity-level" name="activity-level" min="1" max="10" required><br>
+  
+            <label for="content-sample">Please provide a link to a sample of your content (if available):</label>
+            <input type="url" id="content-sample" name="content-sample"><br>
+  
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <label for="additional-comments">Anything else you'd like to share?</label>
+                <textarea id="additional-comments" name="additional-comments" rows="4"></textarea><br>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="application.js"></script>
+</body>
+</html>
